@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balpreet Singh — Engineering Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #1a1a1a;
+      --bg-card:   #222222;
+      --bg-deep:   #141414;
+      --border:    #2e2e2e;
+      --orange:    #e05a1e;
+      --orange-dk: #c44d17;
+      --text:      #f0efeb;
+      --text-dim:  #888880;
+      --text-faint:#3a3a3a;
+      --white:     #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── ICON NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      background: rgba(20,20,20,0.88);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.5rem 0.6rem;
+      margin-top: 1.1rem;
+    }
+
+    nav a {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 1.05rem;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      background: rgba(255,255,255,0.08);
+      color: var(--text);
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 7rem 5rem 4rem;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    /* ── PROFILE CARD ── */
+    .profile-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 2rem;
+      animation: cardIn 0.75s cubic-bezier(.16,1,.3,1) forwards 0.1s;
+    }
+
+    @keyframes cardIn {
+      from { opacity:0; transform:translateY(28px) scale(0.97); }
+      to   { opacity:1; transform:translateY(0) scale(1); }
+    }
+
+    .profile-img-wrap {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--orange);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-initials {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.15);
+      letter-spacing: -0.04em;
+      user-select: none;
+    }
+
+    /* silhouette shape */
+    .profile-img-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 65%;
+      height: 80%;
+      background: rgba(0,0,0,0.28);
+      border-radius: 100px 100px 0 0;
+    }
+
+    .profile-avatar-row {
+      position: relative;
+      margin-top: -28px;
+      z-index: 5;
+    }
+
+    .profile-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--orange);
+      border: 3px solid var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--white);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* dashed orbit */
+    .profile-orbit {
+      position: absolute;
+      inset: -18px;
+      border: 2px dashed rgba(224,90,30,0.45);
+      border-radius: 50%;
+      animation: spin 14s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .profile-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 1rem 1.5rem 0.35rem;
+    }
+
+    .profile-bio {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      margin: 0 1.75rem;
+      line-height: 1.65;
+    }
+
+    .profile-socials {
+      display: flex;
+      gap: 0.65rem;
+      margin-top: 1.4rem;
+    }
+
+    .profile-socials a {
+      width: 2.1rem;
+      height: 2.1rem;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 0.82rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .profile-socials a:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ── HERO RIGHT ── */
+    .hero-right {
+      animation: heroIn 0.85s cubic-bezier(.16,1,.3,1) forwards 0.2s;
+    }
+
+    @keyframes heroIn {
+      from { opacity:0; transform:translateX(20px); }
+      to   { opacity:1; transform:translateX(0); }
+    }
+
+    .hero-title {
+      font-size: clamp(3.8rem, 8vw, 8.5rem);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+
+    .hero-title .line1 { color: var(--white); display: block; }
+    .hero-title .line2 { color: var(--text-faint); display: block; }
+
+    .hero-tagline {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      max-width: 440px;
+      line-height: 1.75;
+      margin: 1.75rem 0 2.25rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .stat-num {
+      font-size: 2.6rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-top: 0.3rem;
+      line-height: 1.4;
+    }
+
+    /* ── TICKER ── */
+    .ticker-wrap {
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 0.8rem 0;
+      margin-top: 3rem;
+    }
+
+    .ticker-track {
+      display: flex;
+      gap: 1.75rem;
+      animation: ticker 20s linear infinite;
+      width: max-content;
+    }
+
+    .ticker-item {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .ticker-item .dot { color: var(--orange); margin: 0 0.35rem; }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── SECTION WRAP ── */
+    .section-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 5rem 5rem;
+    }
+
+    .section-heading {
+      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .section-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.85fr;
+      gap: 4.5rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.9;
+      margin-bottom: 1.25rem;
+    }
+
+    .about-text p strong { color: var(--text); font-weight: 600; }
+
+    .about-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.8rem 1.75rem;
+      border-radius: 100px;
+      margin-top: 0.5rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .about-cta:hover { background: var(--orange-dk); transform: translateY(-2px); }
+
+    .about-stats-col { display: flex; flex-direction: column; }
+
+    .mini-stat {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      gap: 1rem;
+    }
+
+    .mini-stat:first-child { border-top: 1px solid var(--border); }
+
+    .mini-stat-key {
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .mini-stat-val {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--orange);
+      text-align: right;
+    }
+
+    /* ── PROJECTS ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .project-card:hover { border-color: var(--orange); transform: translateY(-5px); }
+
+    .project-thumb {
+      height: 210px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.5rem;
+    }
+
+    .project-card:nth-child(1) .project-thumb {
+      background: linear-gradient(140deg, #1c2b1c 0%, #0e1a0e 100%);
+    }
+
+    .project-card:nth-child(2) .project-thumb {
+      background: linear-gradient(140deg, #2b1d0e 0%, #1a0e00 100%);
+    }
+
+    .project-status {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.22rem 0.7rem;
+      border-radius: 100px;
+    }
+
+    .status-done { background: rgba(34,197,94,0.1); color: #4ade80; border: 1px solid rgba(34,197,94,0.22); }
+    .status-wip  { background: rgba(224,90,30,0.1); color: var(--orange); border: 1px solid rgba(224,90,30,0.28); }
+
+    .project-body { padding: 1.75rem; }
+
+    .project-num {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 0.45rem;
+    }
+
+    .project-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+      line-height: 1.25;
+    }
+
+    .project-desc {
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.72;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+    .tag {
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--text-dim);
+      padding: 0.18rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+    }
+
+    /* ── SKILLS ── */
+    .skills-bento {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .skill-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: border-color 0.2s;
+    }
+
+    .skill-box:hover { border-color: var(--orange); }
+
+    .skill-box-title {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1.1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+
+    .skill-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.87rem;
+      font-weight: 400;
+      color: var(--text-dim);
+    }
+
+    .skill-list li::before {
+      content: '';
+      width: 5px; height: 5px;
+      background: var(--orange);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── EXPERIENCE ── */
+    .exp-list { display: flex; flex-direction: column; }
+
+    .exp-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 3rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: padding-left 0.2s;
+    }
+
+    .exp-row:first-child { border-top: 1px solid var(--border); }
+    .exp-row:hover { padding-left: 0.5rem; }
+
+    .exp-org {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+
+    .exp-desc {
+      font-size: 0.84rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    .exp-year {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--orange);
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding-top: 0.25rem;
+    }
+
+    /* ── AWARDS ── */
+    .awards-list { display: flex; flex-direction: column; }
+
+    .award-row {
+      display: grid;
+      grid-template-columns: 2.6rem 1fr auto;
+      gap: 1.5rem;
+      align-items: center;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: padding-left 0.2s;
+    }
+
+    .award-row:first-child { border-top: 1px solid var(--border); }
+    .award-row:hover { padding-left: 0.5rem; }
+
+    .award-icon {
+      width: 2.4rem; height: 2.4rem;
+      background: var(--bg-deep);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.95rem;
+    }
+
+    .award-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.18rem;
+    }
+
+    .award-desc {
+      font-size: 0.76rem;
+      font-weight: 300;
+      color: var(--text-dim);
+    }
+
+    .award-year {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--orange);
+      white-space: nowrap;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 2rem 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 0.74rem;
+      font-weight: 300;
+      color: var(--text-faint);
+    }
+
+    .footer-resume {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.5rem 1.2rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .footer-resume:hover { border-color: var(--orange); color: var(--orange); }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* ── SKILLS ICON GRID ── */
+    .skills-icon-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: border-color 0.2s;
+    }
+
+    .skill-card:hover { border-color: var(--orange); }
+
+    .skill-card-icon {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .skill-card-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .skill-card-desc {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.65;
+    }
+
+    /* ── CERTIFICATIONS ── */
+    .certs-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .cert-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(34,197,94,0.07);
+      border: 1px solid rgba(34,197,94,0.2);
+      color: #4ade80;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.65rem 1.25rem;
+      border-radius: 100px;
+      letter-spacing: 0.01em;
+    }
+
+    @media (max-width: 900px) {
+      .skills-icon-grid { grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
+    }
+
+    @media (max-width: 500px) {
+      .skills-icon-grid { grid-template-columns: 1fr; }
+    }
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      #hero { grid-template-columns: 1fr; padding: 6rem 1.75rem 3rem; gap: 2.5rem; }
+      .profile-card { max-width: 300px; margin: 0 auto; }
+      .hero-title { font-size: clamp(3rem, 10vw, 5rem); }
+      .hero-stats { gap: 1.75rem; }
+      .section-wrap { padding: 3.5rem 1.75rem; }
+      .about-grid    { grid-template-columns: 1fr; gap: 2.5rem; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .award-row     { grid-template-columns: 2.4rem 1fr; }
+      .award-year    { display: none; }
+      .exp-row       { flex-direction: column; gap: 0.5rem; }
+      footer         { flex-direction: column; gap: 1rem; padding: 2rem 1.75rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ICON NAV -->
+  <nav id="main-nav">
+    <a href="#hero"       class="active" title="Home">🏠</a>
+    <a href="#about"      title="About">📋</a>
+    <a href="#projects"   title="Projects">💼</a>
+    <a href="#skills"     title="Skills">🔧</a>
+    <a href="#awards"     title="Awards">✏️</a>
+    <a href="#certifications" title="Certifications">🛡️</a>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+
+    <div class="profile-card">
+      <div class="profile-img-wrap">
+        <div class="profile-initials">BS</div>
+      </div>
+      <div class="profile-avatar-row">
+        <div class="profile-avatar">B
+          <div class="profile-orbit"></div>
+        </div>
+      </div>
+      <div class="profile-name">Balpreet Singh</div>
+      <p class="profile-bio">A Year 10 engineering student building circuits, systems &amp; ideas from Melbourne, VIC.</p>
+      <div class="profile-socials">
+        <a href="https://github.com" target="_blank" title="GitHub">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="/cdn-cgi/l/email-protection#b5d7d4d9c5c7d0d0c1c6dcdbd2ddd8d0d9d7f5d2d8d4dcd99bd6dad8" title="Email">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <h1 class="hero-title">
+        <span class="line1">Engineering</span>
+        <span class="line2">Student</span>
+      </h1>
+      <p class="hero-tagline">
+        Year 10 at Hume Anglican Grammar on an Academic Scholarship. Passionate about electronics, hardware design, and software engineering — building real things from soldered circuits to coded systems.
+      </p>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num"><span class="count-up" data-target="6">0</span><span style="color:var(--orange)">+</span></div>
+          <div class="stat-label">Projects<br>Completed</div>
+        </div>
+        <div>
+          <div class="stat-num"><span class="count-up" data-target="4">0</span><span style="color:var(--orange)">×</span></div>
+          <div class="stat-label">Excellence<br>Awards</div>
+        </div>
+        <div>
+          <div class="stat-num" style="font-size:1.8rem;line-height:1.4;">Top <span style="color:var(--orange)">15%</span></div>
+          <div class="stat-label">Maths Olympiad<br>National</div>
+        </div>
+      </div>
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <span class="ticker-item">Arduino<span class="dot">✦</span></span>
+          <span class="ticker-item">Python<span class="dot">✦</span></span>
+          <span class="ticker-item">Circuit Soldering<span class="dot">✦</span></span>
+          <span class="ticker-item">Tinkercad CAD<span class="dot">✦</span></span>
+          <span class="ticker-item">HTML / CSS<span class="dot">✦</span></span>
+          <span class="ticker-item">3D Design<span class="dot">✦</span></span>
+          <span class="ticker-item">Electronics<span class="dot">✦</span></span>
+          <span class="ticker-item">GitHub<span class="dot">✦</span></span>
+          <span class="ticker-item">Arduino<span class="dot">✦</span></span>
+          <span class="ticker-item">Python<span class="dot">✦</span></span>
+          <span class="ticker-item">Circuit Soldering<span class="dot">✦</span></span>
+          <span class="ticker-item">Tinkercad CAD<span class="dot">✦</span></span>
+          <span class="ticker-item">HTML / CSS<span class="dot">✦</span></span>
+          <span class="ticker-item">3D Design<span class="dot">✦</span></span>
+          <span class="ticker-item">Electronics<span class="dot">✦</span></span>
+          <span class="ticker-item">GitHub<span class="dot">✦</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <div class="section-wrap" id="about">
+    <h2 class="section-heading fade-in">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>I'm a Year 10 student at <strong>Hume Anglican Grammar</strong> on an <strong>Academic Scholarship</strong>, passionate about engineering and the way things work at a fundamental level.</p>
+        <p>I've been building and tinkering with electronics since early high school — soldering circuits, designing 3D models in Tinkercad, and writing code in Python and HTML. I don't just want to understand how technology works; I want to build it.</p>
+        <p>Outside of school, I'm working through a full electronics and Arduino project roadmap — moving from sensor modules to fully soldered, from-scratch circuit builds. Every project goes on this portfolio.</p>
+        <a href="Balpreet_Singh_Resume.pdf" download class="about-cta">↓ Download Résumé</a>
+      </div>
+      <div class="about-stats-col fade-in">
+        <div class="mini-stat"><span class="mini-stat-key">School</span><span class="mini-stat-val">Hume Anglican Grammar</span></div>
+        <div class="mini-stat"><span class="mini-stat-key">Year Level</span><span class="mini-stat-val">Year 10</span></div>
+        <div class="mini-stat"><span class="mini-stat-key">Location</span><span class="mini-stat-val">Melbourne, VIC</span></div>
+        <div class="mini-stat"><span class="mini-stat-key">Scholarship</span><span class="mini-stat-val">Academic</span></div>
+        <div class="mini-stat"><span class="mini-stat-key">NAPLAN</span><span class="mini-stat-val">Top in Victoria</span></div>
+        <div class="mini-stat"><span class="mini-stat-key">Maths Olympiad</span><span class="mini-stat-val">Top 15% Nationally</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PROJECTS ── -->
+  <div class="section-wrap" id="projects">
+    <h2 class="section-heading fade-in">Recent Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card fade-in">
+        <div class="project-thumb">
+          <span>⚡</span>
+          <span class="project-status status-done">Complete</span>
+        </div>
+        <div class="project-body">
+          <div class="project-num">Project 01</div>
+          <h3 class="project-name">Arduino Circuit Builds</h3>
+          <p class="project-desc">Built and programmed multiple Arduino-based circuits from scratch — LED control, button inputs, buzzer alarms, and sensor integrations using the Arduino IDE and C++.</p>
+          <div class="project-tags">
+            <span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">Electronics</span><span class="tag">Soldering</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card fade-in">
+        <div class="project-thumb">
+          <span>🧊</span>
+          <span class="project-status status-done">Complete</span>
+        </div>
+        <div class="project-body">
+          <div class="project-num">Project 02</div>
+          <h3 class="project-name">3D Engineering Models — Tinkercad</h3>
+          <p class="project-desc">Designed functional 3D models in Tinkercad — applying CAD principles to prototype enclosures, mounts, and mechanical parts. Models exported as STL files for 3D printing.</p>
+          <div class="project-tags">
+            <span class="tag">Tinkercad</span><span class="tag">CAD</span><span class="tag">3D Design</span><span class="tag">STL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── EXPERIENCE ── -->
+  <div class="section-wrap" id="experience">
+    <h2 class="section-heading fade-in">Academic Background</h2>
+    <div class="exp-list">
+      <div class="exp-row fade-in">
+        <div>
+          <div class="exp-org">Hume Anglican Grammar — Academic Scholar</div>
+          <p class="exp-desc">Awarded the Academic Scholarship for outstanding performance. Achieved Excellence Awards in Advanced Mathematics, Humanities, and Young Engineers, maintaining top results school-wide across multiple years.</p>
+        </div>
+        <div class="exp-year">2020 – Present</div>
+      </div>
+      <div class="exp-row fade-in">
+        <div>
+          <div class="exp-org">Science Talent Search — Two Research Entries</div>
+          <p class="exp-desc">Submitted two original research posters: AI-Assisted Conservation exploring machine learning in species preservation (2024), and a poster on life-saving robotics and the future of industrial engineering (2023).</p>
+        </div>
+        <div class="exp-year">2023 – 2024</div>
+      </div>
+      <div class="exp-row fade-in">
+        <div>
+          <div class="exp-org">National Maths Olympiad — Top 15%</div>
+          <p class="exp-desc">Competed nationally and ranked in the top 15% of all Australian students, demonstrating strong analytical reasoning and advanced mathematical problem-solving under competition conditions.</p>
+        </div>
+        <div class="exp-year">2022</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SKILLS ── -->
+  <div class="section-wrap" id="skills">
+    <h2 class="section-heading fade-in">Skills</h2>
+    <div class="skills-icon-grid">
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">⚡</div>
+        <div class="skill-card-name">Electronics &amp; Hardware</div>
+        <div class="skill-card-desc">Circuit soldering, Arduino (UNO/Mega), sensor integration, perfboard prototyping, and electronics fundamentals.</div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">🤝</div>
+        <div class="skill-card-name">Teamwork</div>
+        <div class="skill-card-desc">Experienced collaborating in school engineering programs and group design challenges with shared goals.</div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">💬</div>
+        <div class="skill-card-name">Communication</div>
+        <div class="skill-card-desc">Strong written and verbal communication developed through student leadership, presentations, and technical documentation.</div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">⏱️</div>
+        <div class="skill-card-name">Time Management</div>
+        <div class="skill-card-desc">Balances academics, engineering projects, and extracurriculars — consistently meeting deadlines and responsibilities.</div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">📐</div>
+        <div class="skill-card-name">Willingness to Learn</div>
+        <div class="skill-card-desc">Proactive attitude toward taking on new challenges — from 3D CAD modelling in Tinkercad to programming in Python and HTML.</div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-card-icon">🔒</div>
+        <div class="skill-card-name">Safety Awareness</div>
+        <div class="skill-card-desc">Certified across 7 Safe@Work modules including construction, electrical, metals and engineering, and more.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <div class="section-wrap" id="certifications">
+    <h2 class="section-heading fade-in">Certifications</h2>
+    <div class="certs-grid fade-in">
+      <div class="cert-pill">✓ Safe@Work — General</div>
+      <div class="cert-pill">✓ Safe@Work — Building &amp; Construction</div>
+      <div class="cert-pill">✓ Safe@Work — Electrical &amp; Electronics</div>
+      <div class="cert-pill">✓ Safe@Work — Metals &amp; Engineering</div>
+      <div class="cert-pill">✓ Safe@Work — Office &amp; Business Services</div>
+      <div class="cert-pill">✓ Safe@Work — Retail</div>
+      <div class="cert-pill">✓ CPCWHS1001 — Prepare to Work Safely in Construction</div>
+    </div>
+  </div>
+
+  <!-- ── AWARDS ── -->
+  <div class="section-wrap" id="awards">
+    <h2 class="section-heading fade-in">Awards &amp; Achievements</h2>
+    <div class="awards-list">
+      <div class="award-row fade-in">
+        <div class="award-icon">🏆</div>
+        <div><div class="award-title">Academic Excellence — Advanced Mathematics, Humanities &amp; Young Engineers</div><div class="award-desc">Hume Anglican Grammar — School-wide academic recognition</div></div>
+        <div class="award-year">2025</div>
+      </div>
+      <div class="award-row fade-in">
+        <div class="award-icon">🏆</div>
+        <div><div class="award-title">Academic Excellence — Overall Studies &amp; Advanced Mathematics</div><div class="award-desc">Hume Anglican Grammar — School-wide academic recognition</div></div>
+        <div class="award-year">2024</div>
+      </div>
+      <div class="award-row fade-in">
+        <div class="award-icon">🔬</div>
+        <div><div class="award-title">Science Talent Search — Species Survival: AI-Assisted Conservation</div><div class="award-desc">Poster exploring artificial intelligence in species conservation efforts</div></div>
+        <div class="award-year">2024</div>
+      </div>
+      <div class="award-row fade-in">
+        <div class="award-icon">🔬</div>
+        <div><div class="award-title">Science Talent Search — Innovation: Powering Future Industries</div><div class="award-desc">Poster on life-saving robotics and the future of industrial engineering</div></div>
+        <div class="award-year">2023</div>
+      </div>
+      <div class="award-row fade-in">
+        <div class="award-icon">📊</div>
+        <div><div class="award-title">NAPLAN — Top Achiever in Victoria</div><div class="award-desc">Consistently top results in Numerical Reasoning, Reading, and Verbal Reasoning</div></div>
+        <div class="award-year">Ongoing</div>
+      </div>
+      <div class="award-row fade-in">
+        <div class="award-icon">➗</div>
+        <div><div class="award-title">Maths Olympiad — Top 15% Nationally</div><div class="award-desc">Ranked in the top 15% of Australian students in the national Maths Olympiad</div></div>
+        <div class="award-year">2022</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; built by Balpreet Singh · Melbourne, VIC · 2025</p>
+    <a href="Balpreet_Singh_Resume.pdf" download class="footer-resume">↓ Download Résumé</a>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Bulletproof scroll animations using interval + scroll listener
+  var fadeEls = Array.from(document.querySelectorAll('.fade-in'));
+
+  function checkVisible() {
+    var wh = window.innerHeight;
+    fadeEls.forEach(function(el) {
+      if (el.classList.contains('visible')) return;
+      if (el.getBoundingClientRect().top < wh - 30) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisible, { passive: true });
+  window.addEventListener('resize', checkVisible, { passive: true });
+  checkVisible();
+  var ticks = 0;
+  var iv = setInterval(function() { checkVisible(); if (++ticks > 30) clearInterval(iv); }, 100);
+
+  // Count-up
+  function animateCount(el) {
+    var target = +el.getAttribute('data-target');
+    var n = 0, step = Math.ceil(target / 36);
+    var t = setInterval(function() {
+      n = Math.min(n + step, target);
+      el.textContent = n;
+      if (n >= target) clearInterval(t);
+    }, 38);
+  }
+  var counted = false;
+  function checkCounters() {
+    if (counted) return;
+    document.querySelectorAll('.count-up').forEach(function(el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) { counted = true; animateCount(el); }
+    });
+  }
+  window.addEventListener('scroll', checkCounters, { passive: true });
+  checkCounters();
+
+  // Active nav
+  var sectionIds = ['hero','about','projects','experience','skills','awards'];
+  var navLinks = document.querySelectorAll('#main-nav a');
+  window.addEventListener('scroll', function() {
+    var cur = '';
+    sectionIds.forEach(function(id) {
+      var s = document.getElementById(id);
+      if (s && window.scrollY >= s.offsetTop - 260) cur = id;
+    });
+    navLinks.forEach(function(a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+    });
+  }, { passive: true });
+</script><script>
+    // Scroll fade-in — use rootMargin so elements near viewport trigger too
+    function initFadeIns() {
+      const els = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: "0px 0px -40px 0px" });
+      els.forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.04) + "s";
+        // If already in view on load, show immediately
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          el.classList.add('visible');
+        } else {
+          observer.observe(el);
+        }
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initFadeIns);
+    } else {
+      initFadeIns();
+    }
+
+    // Count-up
+    function animateCount(el) {
+      const target = +el.dataset.target;
+      let n = 0;
+      const step = Math.ceil(target / 36);
+      const t = setInterval(() => {
+        n = Math.min(n + step, target);
+        el.textContent = n;
+        if (n >= target) clearInterval(t);
+      }, 38);
+    }
+
+    const cObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); cObs.unobserve(e.target); } });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.count-up').forEach(el => cObs.observe(el));
+
+    // Active nav
+    const sections = ['hero','about','projects','experience','skills','awards'].map(id => document.getElementById(id)).filter(Boolean);
+    const navLinks = document.querySelectorAll('#main-nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 260)      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 260) current = s.id; });
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    });
+  </script>
+</body>
+</html>
